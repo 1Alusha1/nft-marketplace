@@ -12,7 +12,7 @@ const ContactSections = () => {
                     <SectionTitle text="Join our weekly digest" classname="mb-2.5" />
                     <SectionSubTitle text="Get exclusive promotions & updates straight to your inbox." classname="mb-10" />
                     <form className="flex flex-col gap-4 lg:gap-0 lg:flex-row items-center relative">
-                        <input type="text" placeholder="Enter your email here" className=" px-5 py-3.25 lg:py-5 lg:px-7.5 text-[16px] w-full lg:w-[80%] border border-white bg-white rounded-[20px] md:rounded-l-[20px] lg:absolute left-0 top-0" />
+                        <input type="text" placeholder="Enter your email here" className=" px-5 py-3.25  text-[16px] w-full lg:w-[95%] border border-white bg-white rounded-[20px] md:rounded-l-[20px] lg:absolute left-0 top-0" />
                         <Button classname="w-full lg:w-auto lg:absolute right-0 top-0" size="input" >
                             Subscribe
                         </Button>

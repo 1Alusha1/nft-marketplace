@@ -1,11 +1,15 @@
+'use client'
+
 import { ReactNode } from "react";
+import { motion } from 'motion/react'
 
 interface Props {
     click?: () => void;
     type?: 'primary' | 'transparent' | 'white';
     size?: 'default' | 'small' | 'input';
     children: ReactNode;
-    classname?: string
+    classname?: string;
+    typeBtn?: 'button' | 'submit'
 }
 
 const Button = ({
@@ -13,10 +17,11 @@ const Button = ({
     children,
     type = 'primary',
     size = 'default',
-    classname
+    classname,
+    typeBtn = 'button'
 }: Props) => {
 
-    const base = "flex items-center justify-center gap-3 rounded-[20px] font-semibold cursor-pointer transition";
+    const base = "flex items-center justify-center gap-3 rounded-[20px] font-semibold cursor-pointer";
 
     const typeClass = type === 'primary'
         ? 'bg-purple border border-purple text-white'
@@ -27,16 +32,20 @@ const Button = ({
         size === 'small'
             ? 'py-1 px-2 text-[14px]'
             : size === 'input'
-                ? 'py-3.25 lg:py-5 px-5 lg:px-7.5 text-[16px] w-full'
+                ? 'py-3.25 px-5 text-[16px] w-full'
                 : 'py-5 px-7.5 text-[16px]';
 
     return (
-        <button
+        <motion.button
+            whileHover={{
+                scale: 1.05
+            }}
             onClick={click}
-            className={`${base} ${typeClass} ${sizeClass} ${classname} w-full `}
+            type={typeBtn}
+            className={`${base} ${typeClass} ${sizeClass} ${classname}  w-full `}
         >
             {children}
-        </button>
+        </motion.button>
     );
 };
 

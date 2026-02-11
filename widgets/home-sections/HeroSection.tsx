@@ -1,7 +1,7 @@
 import Button from "@/shared/Button";
 import HighlightedNft from "@/shared/HighlightedNft";
-import Timer from "@/shared/Timer";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
     return (
@@ -20,10 +20,11 @@ const HeroSection = () => {
                     <HighlightedNft name="Space Walking" nftImagePath="/home/hero.png" author="Animakid" authorImgPath="/authors/a1.png" />
                 </div>
 
-                <Button size="default" >
-                    <Image src={'/icons/rocket.png'} width={20} height={20} alt="rocket" />
-                    Get Started</Button>
-
+                <Link href={'/create-account'}>
+                    <Button size="default" >
+                        <Image src={'/icons/rocket.png'} width={20} height={20} alt="rocket" />
+                        Get Started</Button>
+                </Link>
                 <ul className="flex justify-center md:justify-start  gap-7.5 mt-7.5 display-none">
                     <li className="flex flex-col">
                         <span className="font-bold text-[22px] leading-[140%] lg:text-[28px] lg:leading-[140%]">240k+</span>
