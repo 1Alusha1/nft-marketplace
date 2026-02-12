@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Work_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/widgets/Header";
 import Footer from "@/widgets/Footer";
+import Header from "@/widgets/header/Header";
 
 const workSans = Work_Sans({
   weight: ['400', '600', '700']

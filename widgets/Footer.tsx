@@ -4,6 +4,7 @@ import Container from "../shared/Container";
 import Image from "next/image";
 import { spaceMomoSans } from "@/app/fonts";
 import Logo from "@/shared/Logo";
+import Socials from "@/shared/Socials";
 
 const Footer = () => {
     return (
@@ -18,28 +19,7 @@ const Footer = () => {
                             <span className="block">NFT marketplace UI created</span> with Anima for Figma.</p>
                         <div>
                             <p className="text-custom-gray text-[16px] leading-[140%] mb-3.75">Join our community</p>
-                            <ul className="flex gap-2.5">
-                                <li>
-                                    <Link href=''>
-                                        <Image src={'/socials/ds.png'} width={32} height={32} alt="discord logo" />
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href=''>
-                                        <Image src={'/socials/yt.png'} width={32} height={32} alt="yt logo" />
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href=''>
-                                        <Image src={'/socials/X.png'} width={32} height={32} alt="twitter logo" />
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href=''>
-                                        <Image src={'/socials/inst.png'} width={32} height={32} alt="instagram logo" />
-                                    </Link>
-                                </li>
-                            </ul>
+                            <Socials />
                         </div>
                     </div>
                     <div>

@@ -7,15 +7,16 @@ interface Props {
     author: string;
     authorImgPath: string;
     price: number;
-    highestBid: number
+    highestBid: number;
+    bg?: 'default' | 'profile';
 }
 
 
-const NFTCard = ({ nftImagePath, authorImgPath, author, name, price, highestBid }: Props) => {
+const NFTCard = ({ nftImagePath, authorImgPath, author, name, price, highestBid, bg = 'default' }: Props) => {
     return (
         <div className="rounded-[20px] overflow-hidden  w-full h-full ">
             <img src={nftImagePath} alt="" className="w-full " />
-            <div className="bg-bg-secondary p-5 rounded-b-[20px]">
+            <div className={`${bg === 'default' ? 'bg-bg-secondary' : 'bg-bg'} p-5 rounded-b-[20px]`}>
                 <p className="mb-2.5 text-[22px] font-semibold leading-[140%] text-white">{name}</p>
                 <AuthorAvatar authorImgPath={authorImgPath} author={author} />
                 <div className="mb-6.25"></div>

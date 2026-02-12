@@ -1,5 +1,6 @@
 import Button from "@/shared/Button";
 import HighlightedNft from "@/shared/HighlightedNft";
+import Stats from "@/shared/Stats";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,20 +26,7 @@ const HeroSection = () => {
                         <Image src={'/icons/rocket.png'} width={20} height={20} alt="rocket" />
                         Get Started</Button>
                 </Link>
-                <ul className="flex justify-center md:justify-start  gap-7.5 mt-7.5 display-none">
-                    <li className="flex flex-col">
-                        <span className="font-bold text-[22px] leading-[140%] lg:text-[28px] lg:leading-[140%]">240k+</span>
-                        Total Sale
-                    </li>
-                    <li className="flex flex-col">
-                        <span className="font-bold text-[22px] leading-[140%] lg:text-[28px] lg:leading-[140%]">100k+</span>
-                        Auctions
-                    </li>
-                    <li className="flex flex-col">
-                        <span className="font-bold text-[22px] leading-[140%] lg:text-[28px] lg:leading-[140%]">240k+</span>
-                        Artists
-                    </li>
-                </ul>
+                <Stats artistsCounst={79} auctionsCount={45} totalSale={240} variant="community"/>
             </div>
             <div className="hidden md:block">
                 <HighlightedNft name="Space Walking" nftImagePath="/home/hero.png" author="Animakid" authorImgPath="/authors/a1.png" />

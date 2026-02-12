@@ -16,7 +16,7 @@ const Creator = ({ count, imgAuthorPath, totalSales, author }: Props) => {
                 {count}
             </div>
             <div className="flex flex-col items-center">
-                <div className="mb-5 " >
+                <div className="mb-5 rounded-full overflow-hidden" >
                     <Image src={imgAuthorPath} width={120} height={120} alt="author" />
                 </div>
                 <p className="text-white text-[22px] font-semibold mb-1.25">{author}</p>

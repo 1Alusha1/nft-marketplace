@@ -8,7 +8,7 @@ const CTASections = () => {
     return (
         <div className="cta">
             <Container>
-                <div className="relative z-1002 flex flex-col justify-end h-screen w-full ">
+                <div className="relative z-1005 flex flex-col justify-end h-screen w-full ">
                     <div className="flex flex-col md:flex-row justify-between gap-7.5 md:gap-0 items-center text-white pb-15">
                         <div>
                             <div className="bg-bg py-2.5 px-5 rounded-[20px] mb-7.5 inline-block">
