@@ -1,6 +1,7 @@
 import Button from "@/shared/Button";
 import Input from "@/shared/Input";
 import SectionSubTitle from "@/shared/SectionSubTitle";
+import Title from "@/shared/Title";
 import Image from "next/image";
 
 const ConnectWallet = () => {
@@ -8,7 +9,9 @@ const ConnectWallet = () => {
         <main className="md:pt-13.5 lg:pt-[108.1px] flex flex-col md:flex-row gap-7.5 md:gap-10 lg:gap-15 items-center ">
             <img src="/auth/connectwal.png" alt="create account" className="md:h-screen md:w-[50vw] object-cover " />
             <div className="pb-7.5">
-                <h1 className="text-[38px] lg:text-[51px] text-white leading-[110%] font-semibold mb-5">Connect wallet</h1>
+                <Title classname="mb-5">
+                    Connect wallet
+                </Title>
                 <SectionSubTitle text={<><span className="block">Choose a wallet you want to connect.</span> There are several wallet providers.</>} classname="mb-10" />
 
                 <div className="grid gap-5">

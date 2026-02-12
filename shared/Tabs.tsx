@@ -3,9 +3,10 @@
 import { ReactNode, useState } from "react";
 import Container from "@/shared/Container";
 import SectionContainer from "@/shared/SectionContainer";
+import Tag from "./Tag";
 
 export interface TabItem {
-    id: number;
+    id: string;
     label: string;
     count?: number;
     content: ReactNode;
@@ -13,15 +14,12 @@ export interface TabItem {
 
 interface TabsProps {
     tabs: TabItem[];
-    defaultTab?: number;
+    activeTab: string;
+    onChange: (id: string) => void;
 }
 
-const Tabs = ({ tabs, defaultTab }: TabsProps) => {
-    const [activeTab, setActiveTab] = useState<number>(
-        defaultTab ?? tabs[0].id
-    );
-
-    const activeContent = tabs.find(t => t.id === activeTab)?.content;
+const Tabs = ({ tabs, activeTab, onChange }: TabsProps) => {
+    const activeContent = tabs.find(tab => tab.id === activeTab)?.content;
 
     return (
         <>
@@ -34,8 +32,8 @@ const Tabs = ({ tabs, defaultTab }: TabsProps) => {
                             return (
                                 <li
                                     key={tab.id}
-                                    onClick={() => setActiveTab(tab.id)}
-                                    className={`flex-1 text-center text-[22px] font-semibold py-[14.5px] cursor-pointer
+                                    onClick={() => onChange(tab.id)}
+                                    className={` flex justify-center gap-4 flex-1 text-center text-[22px] font-semibold py-[14.5px] cursor-pointer
                                     ${isActive
                                             ? 'border-b border-lable-text text-white'
                                             : 'text-lable-text'
@@ -44,15 +42,7 @@ const Tabs = ({ tabs, defaultTab }: TabsProps) => {
                                     {tab.label}
 
                                     {tab.count !== undefined && (
-                                        <span
-                                            className={`hidden md:inline-block ml-4 py-1.25 px-2.5 rounded-[15px] font-normal text-[16px]
-                                            ${isActive
-                                                    ? 'bg-lable-text'
-                                                    : 'bg-bg-secondary'
-                                                }`}
-                                        >
-                                            {tab.count}
-                                        </span>
+                                        <Tag text={tab.count} isActive={isActive} font="normal"/>
                                     )}
                                 </li>
                             );

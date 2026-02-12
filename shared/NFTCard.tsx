@@ -1,7 +1,12 @@
+'use client'
+
 import { spaceMomoSans } from "@/app/fonts";
 import AuthorAvatar from "./AuthorAvatar";
+import { useRouter } from "next/navigation";
+import { motion } from 'motion/react';
 
 interface Props {
+    id: string;
     nftImagePath: string;
     name: string;
     author: string;
@@ -12,9 +17,14 @@ interface Props {
 }
 
 
-const NFTCard = ({ nftImagePath, authorImgPath, author, name, price, highestBid, bg = 'default' }: Props) => {
+const NFTCard = ({ id, nftImagePath, authorImgPath, author, name, price, highestBid, bg = 'default' }: Props) => {
+    const router = useRouter()
     return (
-        <div className="rounded-[20px] overflow-hidden  w-full h-full ">
+        <motion.div
+            whileHover={{
+                scale: 0.95
+            }}
+            className="rounded-[20px] overflow-hidden  w-full h-full cursor-pointer" onClick={() => router.push(`/nft/${id}`)}>
             <img src={nftImagePath} alt="" className="w-full " />
             <div className={`${bg === 'default' ? 'bg-bg-secondary' : 'bg-bg'} p-5 rounded-b-[20px]`}>
                 <p className="mb-2.5 text-[22px] font-semibold leading-[140%] text-white">{name}</p>
@@ -36,7 +46,7 @@ const NFTCard = ({ nftImagePath, authorImgPath, author, name, price, highestBid,
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     );
 }
 

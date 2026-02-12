@@ -4,8 +4,9 @@ import SectionSubTitle from "@/shared/SectionSubTitle";
 import SectionTitle from "@/shared/SectionTitle";
 import Image from "next/image";
 
-import { data } from '../../entities/creator'
+import { artist } from '../../entities/artist'
 import SectionContainer from "@/shared/SectionContainer";
+import Link from "next/link";
 
 const TopCreatorsSection = () => {
     return (
@@ -24,8 +25,11 @@ const TopCreatorsSection = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7.5 h-136.5 overflow-auto  md:h-auto">
-                {data.map(({ imgAuthorPath, totalSales, author }, idx) => <Creator key={idx} imgAuthorPath={imgAuthorPath} totalSales={totalSales} author={author} count={idx + 1} />)}
-            </div>
+                {artist.map(({ imgAuthorPath, name, totalSales, id }) =>
+                    <Link key={id}
+                        href={`/artist/${id}`}>
+                        <Creator totalSales={totalSales} name={name} imgAuthorPath={imgAuthorPath} count={id} />
+                    </Link>)}</div>
             <div className="block md:hidden mt-10">
                 <Button type="transparent">
                     <Image src={'/icons/purple-rocket.png'} width={20} height={20} alt="purple rocket icon" />

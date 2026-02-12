@@ -1,21 +1,27 @@
 'use client'
 import { spaceMomoSans } from "@/app/fonts";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 type time = {
     minutes: number,
     seconds: number,
     hours: number
 }
-const Timer = () => {
+
+interface Props {
+    startTimer?: number;
+    children?: ReactNode
+}
+
+const Timer = ({ children, startTimer = 10 }: Props) => {
 
     const [time, setTime] = useState<time>({
         minutes: 0,
         seconds: 0,
-        hours: 10
+        hours: startTimer
     })
 
-    let total = 10 * 60 * 60;
+    let total = startTimer * 60 * 60;
     useEffect(() => {
         const updateTimer = () => {
             const hours = Math.floor(total / 3600);
@@ -36,11 +42,12 @@ const Timer = () => {
             clearInterval(timer)
         }
     }, [])
+
     const timerFix = (digit: number) => digit < 10 ? `0${digit}` : digit
 
-    return (<div className="bg-[#3B3B3B80] rounded-[20px] p-7.5 w-full md:w-auto">
+    return (<div className="bg-[#3B3B3B80] rounded-[20px] p-7.5 w-full md:w-auto text-white">
         <p className={`${spaceMomoSans.className} text-[12px] leading-[110%] mb-2.5`}>Auction ends in:</p>
-        <div className="flex items-start justify-center gap-2.5">
+        <div className="flex items-start justify-center gap-2.5 ">
             <div className="flex flex-col  items-center">
                 <span className="block text-[38px] leading-[120%] font-bold mb-1.25">{timerFix(time.hours)}</span>
                 Hours
@@ -56,6 +63,7 @@ const Timer = () => {
                 Seconds
             </div>
         </div>
+        {children}
     </div>);
 }
 

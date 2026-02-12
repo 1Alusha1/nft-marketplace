@@ -1,15 +1,8 @@
-'use client'
-import { profile_tabs } from "@/entities/tabs";
-import ArtistHeader from "@/widgets/artist/ArtistHeader";
-import Tabs from "@/widgets/artist/Tabs";
-
-
-
+import ArtistClient from "./ArtistClient";
 const ArtistId = () => {
     return (
         <main>
-            <ArtistHeader />
-            <Tabs tabs={profile_tabs} />
+            <ArtistClient />
         </main>
     );
 }

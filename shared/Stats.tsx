@@ -1,7 +1,7 @@
 interface Props {
-    totalSale: number;
-    auctionsCount: number;
-    artistsCounst: number;
+    totalSale: number | null;
+    auctionsCount: number | null;
+    artistsCounst: number | null;
     variant?: 'personal' | 'community';
     mobilePostion?: 'start' | 'center'
 }

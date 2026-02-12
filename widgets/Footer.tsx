@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Button from "../shared/Button";
 import Container from "../shared/Container";
-import Image from "next/image";
 import { spaceMomoSans } from "@/app/fonts";
 import Logo from "@/shared/Logo";
 import Socials from "@/shared/Socials";
 
 const Footer = () => {
     return (
-        <div className="py-10 bg-bg-secondary">
+        <footer className="py-10 bg-bg-secondary border-t border-bg">
             <Container>
                 <div className="grid grid-cols-1 gap-7.5 lg:gap-0 lg:grid-cols-[4fr_3fr_5fr] justify-center w-full lg:p-7.5 mb-7.5 lg:mb-0">
                     <div>
@@ -59,7 +58,7 @@ const Footer = () => {
                     <p className="text-custom-gray text-[12px] leading-[110%]">Ⓒ NFT Market. Use this template freely.</p>
                 </div>
             </Container>
-        </div>
+        </footer>
     );
 }
 
