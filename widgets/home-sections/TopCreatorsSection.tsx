@@ -1,3 +1,5 @@
+'use client';
+
 import Button from "@/shared/Button";
 import Creator from "@/shared/Creator";
 import SectionSubTitle from "@/shared/SectionSubTitle";
@@ -7,8 +9,10 @@ import Image from "next/image";
 import { artist } from '../../entities/artist'
 import SectionContainer from "@/shared/SectionContainer";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const TopCreatorsSection = () => {
+    const router = useRouter();
     return (
         <SectionContainer>
             <div className="flex items-center-center justify-between">
@@ -17,7 +21,7 @@ const TopCreatorsSection = () => {
                     <SectionSubTitle text="Checkout Top Rated Creators on the NFT Marketplace" classname="mb-15" />
                 </div>
                 <div className="hidden md:block">
-                    <Button type="transparent">
+                    <Button type="transparent" click={()=> router.push('/rankings')}>
                         <Image src={'/icons/purple-rocket.png'} width={20} height={20} alt="purple rocket icon" />
                         View Rankings
                     </Button>
@@ -31,7 +35,7 @@ const TopCreatorsSection = () => {
                         <Creator totalSales={totalSales} name={name} imgAuthorPath={imgAuthorPath} count={id} />
                     </Link>)}</div>
             <div className="block md:hidden mt-10">
-                <Button type="transparent">
+                <Button type="transparent" click={()=> router.push('/rankings')}>
                     <Image src={'/icons/purple-rocket.png'} width={20} height={20} alt="purple rocket icon" />
                     View Rankings
                 </Button>

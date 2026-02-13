@@ -62,7 +62,7 @@ export const data = [
     {
         id: 'nf4',
         nftImagePath: '/nft/n4.png',
-        name: 'AstroFiction',
+        name: 'CryptoCity',
         author: 'DigiLab',
         authorImgPath: '/authors/a2.png',
         price: 1.63,
@@ -83,7 +83,7 @@ export const data = [
     {
         id: 'nf5',
         nftImagePath: '/nft/n5.png',
-        name: 'AstroFiction',
+        name: 'ColorfulDog 0524',
         author: 'GravityOne',
         authorImgPath: '/authors/a3.png',
         price: 1.63,
@@ -104,7 +104,7 @@ export const data = [
     {
         id: 'nf6',
         nftImagePath: '/nft/n6.png',
-        name: 'AstroFiction',
+        name: 'Space Tales',
         author: 'GravityOne',
         authorImgPath: '/authors/a3.png',
         price: 1.63,
@@ -124,7 +124,7 @@ export const data = [
     {
         id: 'nf7',
         nftImagePath: '/nft/n7.png',
-        name: 'AstroFiction',
+        name: 'Cherry Blossom Girl 037',
         author: 'Juanie',
         authorImgPath: '/authors/a4.png',
         price: 1.63,
@@ -145,7 +145,7 @@ export const data = [
     {
         id: 'nf8',
         nftImagePath: '/nft/n8.png',
-        name: 'AstroFiction',
+        name: 'Dancing Robots 0987',
         author: 'Juanie',
         authorImgPath: '/authors/a4.png',
         price: 1.63,
@@ -166,7 +166,7 @@ export const data = [
     {
         id: 'nf9',
         nftImagePath: '/nft/n9.png',
-        name: 'AstroFiction',
+        name: 'IceCream Ape',
         author: 'BlueWhale',
         authorImgPath: '/authors/a5.png',
         price: 1.63,
@@ -186,7 +186,7 @@ export const data = [
     {
         id: 'nf10',
         nftImagePath: '/nft/n10.png',
-        name: 'AstroFiction',
+        name: 'Foxy Life',
         author: 'BlueWhale',
         authorImgPath: '/authors/a5.png',
         price: 1.63,
@@ -207,7 +207,7 @@ export const data = [
     {
         id: 'nf11',
         nftImagePath: '/nft/n11.png',
-        name: 'AstroFiction',
+        name: 'Cat from future',
         author: 'Mr Fox',
         authorImgPath: '/authors/a6.png',
         price: 1.63,
@@ -228,7 +228,7 @@ export const data = [
     {
         id: 'nf12',
         nftImagePath: '/nft/n12.png',
-        name: 'AstroFiction',
+        name: 'Psycho Dog',
         author: 'Mr Fox',
         authorImgPath: '/authors/a6.png',
         price: 1.63,
@@ -248,7 +248,7 @@ export const data = [
     {
         id: 'nf13',
         nftImagePath: '/nft/n13.png',
-        name: 'AstroFiction',
+        name: 'Magic Mushroom 0325',
         author: 'Shroomie',
         authorImgPath: '/authors/a7.png',
         price: 1.63,
@@ -268,7 +268,7 @@ export const data = [
     {
         id: 'nf14',
         nftImagePath: '/nft/n14.png',
-        name: 'AstroFiction',
+        name: 'Happy Robot 032',
         author: 'Shroomie',
         authorImgPath: '/authors/a7.png',
         price: 1.63,
@@ -289,7 +289,7 @@ export const data = [
     {
         id: 'nf15',
         nftImagePath: '/nft/n15.png',
-        name: 'AstroFiction',
+        name: 'Designer Bear',
         author: 'robotica',
         authorImgPath: '/authors/a8.png',
         price: 1.63,
@@ -310,7 +310,7 @@ export const data = [
     {
         id: 'nf16',
         nftImagePath: '/nft/n16.png',
-        name: 'AstroFiction',
+        name: 'Colorful Dog 0356',
         author: 'robotica',
         authorImgPath: '/authors/a8.png',
         price: 1.63,
@@ -330,7 +330,7 @@ export const data = [
     {
         id: 'nf17',
         nftImagePath: '/nft/n17.png',
-        name: 'AstroFiction',
+        name: 'Dancing Robot 0312',
         author: 'RustyRobot',
         authorImgPath: '/authors/a9.png',
         price: 1.63,
@@ -350,7 +350,7 @@ export const data = [
     {
         id: 'nf18',
         nftImagePath: '/nft/n18.png',
-        name: 'AstroFiction',
+        name: 'Cherry Blossom Girl 035',
         author: 'RustyRobot',
         authorImgPath: '/authors/a9.png',
         price: 1.63,
@@ -370,7 +370,7 @@ export const data = [
     {
         id: 'nf19',
         nftImagePath: '/nft/n19.png',
-        name: 'AstroFiction',
+        name: 'Space Travel',
         author: 'Animakid',
         authorImgPath: '/authors/a10.png',
         price: 1.63,
@@ -391,7 +391,7 @@ export const data = [
     {
         id: 'nf20',
         nftImagePath: '/nft/n20.png',
-        name: 'AstroFiction',
+        name: 'Sunset Dimension',
         author: 'Animakid',
         authorImgPath: '/authors/a10.png',
         price: 1.63,
@@ -412,7 +412,7 @@ export const data = [
     {
         id: 'nf21',
         nftImagePath: '/nft/n21.png',
-        name: 'AstroFiction',
+        name: 'Desert Walk',
         author: 'Dotgu',
         authorImgPath: '/authors/a11.png',
         price: 1.63,
@@ -433,7 +433,7 @@ export const data = [
     {
         id: 'nf22',
         nftImagePath: '/nft/n22.png',
-        name: 'AstroFiction',
+        name: 'IceCream Ape 0324',
         author: 'Dotgu',
         authorImgPath: '/authors/a11.png',
         price: 1.63,
@@ -454,7 +454,7 @@ export const data = [
     {
         id: 'nf22',
         nftImagePath: '/nft/n23.png',
-        name: 'AstroFiction',
+        name: 'Colorful Dog 0344',
         author: 'Ghiblier',
         authorImgPath: '/authors/a12.png',
         price: 1.63,

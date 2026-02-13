@@ -3,9 +3,7 @@
 import Image from "next/image";
 import { motion, AnimatePresence } from 'motion/react';
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import Logo from "@/shared/Logo";
-import Button from "@/shared/Button";
 import Navbar from "./Navbar";
 import { data } from '../../entities/navbar'
 

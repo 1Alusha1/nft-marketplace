@@ -6,6 +6,7 @@
   --color-bg-secondary: var(--background-secondary);
   --color-lable-text: var(--lable-text);
   --color-custom-gray: var(--custom-gray);
+  --color-custom-green: var(--custom-green);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +16,7 @@
     --background-secondary: #3B3B3B;
     --lable-text: #858584;
     --custom-gray: #CCCCCC;
+    --custom-green: #00AC4F;
   }
 }
 

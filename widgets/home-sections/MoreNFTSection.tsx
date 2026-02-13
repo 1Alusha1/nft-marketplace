@@ -1,3 +1,4 @@
+'use client'
 import Button from "@/shared/Button";
 import SectionContainer from "@/shared/SectionContainer";
 import SectionSubTitle from "@/shared/SectionSubTitle";
@@ -13,10 +14,11 @@ interface Props {
     nft: any[];
     bg?: 'default' | 'profile';
     countCard?: 'default' | 'profile';
-    onChange?:() => void;
+    onChange?: () => void;
 }
 
-const MoreNFTSection = ({ title, subtitle, btnText, nft, bg = 'default', countCard = 'default', btnImgPath,onChange }: Props) => {
+const MoreNFTSection = ({ title, subtitle, btnText, nft, bg = 'default', countCard = 'default', btnImgPath, onChange }: Props) => {
+
     return (
         <SectionContainer>
             <div className={`flex items-center justify-between ${!subtitle && 'mb-15'}`}>
@@ -25,7 +27,7 @@ const MoreNFTSection = ({ title, subtitle, btnText, nft, bg = 'default', countCa
                     {subtitle && <SectionSubTitle text={subtitle} classname="mb-15" />}
                 </div>
                 <div className="hidden md:block">
-                    <Button type="transparent" click={onChange? onChange : undefined}>
+                    <Button type="transparent" click={onChange ? onChange : undefined}>
                         <Image src={btnImgPath} width={20} height={20} alt="purple rocket icon" />
                         {btnText}
                     </Button>
@@ -37,7 +39,7 @@ const MoreNFTSection = ({ title, subtitle, btnText, nft, bg = 'default', countCa
             <NFTGrid nft={countCard === 'default' ? nft.slice(0, 3) : nft} bg={bg} countCard={countCard} />
 
             <div className="md:hidden block mt-10">
-                <Button type="transparent" click={onChange? onChange : undefined}>
+                <Button type="transparent" click={onChange ? onChange : undefined}>
                     <Image src={'/icons/eye.png'} width={20} height={20} alt="purple rocket icon" />
                     {btnText}
                 </Button>

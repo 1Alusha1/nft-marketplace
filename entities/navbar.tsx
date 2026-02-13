@@ -1,11 +1,11 @@
 export const data = [
     {
         text: 'Marketplace',
-        path: '/'
+        path: '/marketplace'
     },
     {
         text: 'Rankings',
-        path: '/'
+        path: '/rankings'
     },
     {
         text: 'Connect a wallet',

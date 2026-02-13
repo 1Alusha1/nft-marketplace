@@ -7,6 +7,7 @@ export const artist = [
             auctionsCount: 45,
             artistsCounst: 79,
         },
+        change: 1.41,
         totalSales: 34.53,
         collections: [
             {
@@ -39,6 +40,7 @@ export const artist = [
             auctionsCount: 32,
             artistsCounst: 421,
         },
+        change: 1.41,
         totalSales: 34.53,
         collections: [
             {
@@ -71,6 +73,7 @@ export const artist = [
             auctionsCount: 32,
             artistsCounst: 421,
         },
+        change: 1.41,
         totalSales: 34.53,
         collections: [
             {
@@ -103,6 +106,7 @@ export const artist = [
             auctionsCount: 32,
             artistsCounst: 421,
         },
+        change: 1.41,
         totalSales: 34.53,
         collections: [
             {
@@ -135,6 +139,7 @@ export const artist = [
             auctionsCount: 32,
             artistsCounst: 421,
         },
+        change: 1.41,
         totalSales: 34.53,
         collections: [
             {
@@ -168,6 +173,7 @@ export const artist = [
             artistsCounst: 421,
         },
         totalSales: 34.53,
+        change: 1.41,
         collections: [
             {
                 imgsPath: ['/trandCollection/f1.png', '/trandCollection/f2.png', '/trandCollection/f2.png', '/trandCollection/f2.png'],
@@ -200,7 +206,7 @@ export const artist = [
             artistsCounst: 421,
         },
         totalSales: 34.53,
-
+        change: 1.41,
         collections: [
             {
                 imgsPath: ['/trandCollection/f1.png', '/trandCollection/f2.png', '/trandCollection/f2.png', '/trandCollection/f2.png'],
@@ -234,8 +240,8 @@ export const artist = [
         },
         totalSales: 34.53,
 
-        
-        
+        change: 1.41,
+
         collections: [
             {
                 imgsPath: ['/trandCollection/f1.png', '/trandCollection/f2.png', '/trandCollection/f2.png', '/trandCollection/f2.png'],
@@ -269,8 +275,8 @@ export const artist = [
         },
         totalSales: 34.53,
 
-        
-        
+        change: 1.41,
+
         collections: [
             {
                 imgsPath: ['/trandCollection/f1.png', '/trandCollection/f2.png', '/trandCollection/f2.png', '/trandCollection/f2.png'],
@@ -304,8 +310,8 @@ export const artist = [
         },
         totalSales: 34.53,
 
-        
-        
+        change: 1.41,
+
         collections: [
             {
                 imgsPath: ['/trandCollection/f1.png', '/trandCollection/f2.png', '/trandCollection/f2.png', '/trandCollection/f2.png'],
@@ -338,8 +344,8 @@ export const artist = [
             artistsCounst: 421,
         },
         totalSales: 34.53,
-        
-        
+        change: 1.41,
+
         collections: [
             {
                 imgsPath: ['/trandCollection/f1.png', '/trandCollection/f2.png', '/trandCollection/f2.png', '/trandCollection/f2.png'],
@@ -372,9 +378,9 @@ export const artist = [
             artistsCounst: 421,
         },
         totalSales: 34.53,
+        change: 1.41,
 
-        
-        
+
         collections: [
             {
                 imgsPath: ['/trandCollection/f1.png', '/trandCollection/f2.png', '/trandCollection/f2.png', '/trandCollection/f2.png'],

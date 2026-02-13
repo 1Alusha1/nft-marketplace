@@ -8,6 +8,7 @@ import Tag from "./Tag";
 export interface TabItem {
     id: string;
     label: string;
+    mobileLabla?: string;
     count?: number;
     content: ReactNode;
 }
@@ -16,14 +17,16 @@ interface TabsProps {
     tabs: TabItem[];
     activeTab: string;
     onChange: (id: string) => void;
+    bg?: 'light' | 'dark'
+    isCount?: boolean;
+
 }
 
-const Tabs = ({ tabs, activeTab, onChange }: TabsProps) => {
+const Tabs = ({ tabs, activeTab, onChange, bg = 'light', isCount = true }: TabsProps) => {
     const activeContent = tabs.find(tab => tab.id === activeTab)?.content;
-
     return (
         <>
-            <div className="w-full border-t border-bg-secondary">
+            <div className={`w-full border-t border-bg-secondary bg-bg`}>
                 <Container>
                     <ul className="flex">
                         {tabs.map(tab => {
@@ -39,18 +42,23 @@ const Tabs = ({ tabs, activeTab, onChange }: TabsProps) => {
                                             : 'text-lable-text'
                                         }`}
                                 >
-                                    {tab.label}
+                                    <span className={`${tab.mobileLabla && 'hidden md:block'}`}>{tab.label}</span>
+                                    {tab.mobileLabla ? <span className="block md:hidden">{tab.mobileLabla}</span> : null}
 
-                                    {tab.count !== undefined && (
-                                        <Tag text={tab.count} isActive={isActive} font="normal"/>
-                                    )}
+
+                                    {isCount ? (
+                                        tab.count !== undefined && (
+                                            <Tag text={tab.count} isActive={isActive} font="normal" />
+                                        )
+                                    ) : null}
+
                                 </li>
                             );
                         })}
                     </ul>
                 </Container>
             </div>
-            <div className="bg-bg-secondary border-b border-bg">
+            <div className={`${bg === 'light' ? 'bg-bg-secondary border-b border-bg' : 'bg-bg'} `}>
                 <Container>
                     <SectionContainer>
                         {activeContent}

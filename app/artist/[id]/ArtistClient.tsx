@@ -5,7 +5,6 @@ import { artist } from "@/entities/artist";
 import { data } from "@/entities/nft";
 import NFTGrid from "@/shared/NFTGrid";
 import TrandCollection from "@/shared/TrandCollection";
-import { useMemo } from "react";
 import Tabs from "@/shared/Tabs";
 
 const ArtistClient = () => {
