@@ -1,6 +1,4 @@
 import { ReactNode } from "react"
-import { NFT } from "../nft/types"
-
 export interface artist {
     id: number,
     name: number,
@@ -10,8 +8,6 @@ export interface artist {
         artistsCounst: string;
     },
     totalSales: string;
-    nft: NFT[];
-    createde: NFT[];
     collections: {
         imgsPath: string[],
         name: string,
