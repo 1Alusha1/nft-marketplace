@@ -2,7 +2,9 @@ import NftClient from "./NftClient";
 
 const Nft = () => {
     return (
-        <NftClient />
+        <main>
+            <NftClient />
+        </main>
     );
 }
 

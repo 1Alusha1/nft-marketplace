@@ -4,7 +4,6 @@ import MarketplaceHeader from "@/widgets/marketplace/MarketplaceHeader";
 import { useSearchParams, useRouter } from "next/navigation";
 import { data } from '../../entities/nft'
 import { data as collections } from '../../entities/trandCollectoin';
-
 import NFTGrid from "@/shared/NFTGrid";
 import TrandCollection from "@/shared/TrandCollection";
 import Container from "@/shared/Container";

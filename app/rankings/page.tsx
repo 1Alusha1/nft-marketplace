@@ -1,8 +1,13 @@
+import { Suspense } from "react";
 import RankingsClient from "./RankingsClient";
 
 const Rankings = () => {
     return (
-        <RankingsClient />
+        <main>
+            <Suspense fallback={<div className="h-screen">Loading...</div>}>
+                <RankingsClient />
+            </Suspense>
+        </main>
     );
 }
 
